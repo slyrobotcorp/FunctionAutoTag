@@ -22,7 +22,7 @@ $appID = $eventGridEvent.data.claims.appid
 #$modifiedTags = @{"LastModifiedBy"="$nameValue, $upnValue";"DateLastModified"="$dateModified"}
 
 If ($upnValue) {
-$creationTags = @{"CreatedBy"="$nameValue, $upnValue";"DateCreated"="$dateCreated";"DateExpiry"="$dateExpiry";"Environment"="$Environment"}
+$creationTags = @{"CreatedBy"="$nameValue, $upnValue";"DateCreated"="$dateCreated";"ExpirationDate"="$dateExpiry";"Environment"="$Environment"}
 $modifiedTags = @{"LastModifiedBy"="$nameValue, $upnValue";"DateLastModified"="$dateModified"}
 } else {
 $creationTags = @{"CreatedBy"="$appID";"DateCreated"="$dateCreated";"ExpirationDate"="$dateExpiry";"Environment"="$Environment"}
